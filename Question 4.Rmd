@@ -1,0 +1,37 @@
+
+# Problem 4 (25 points)
+
+(a) (10 points) Define a function `imperial_to_metric` that takes in **two arguments**: a number of feet and a number of inches. The function should return the equivalent length in meters
+
+> To convert a length `L` from feet (`ft`) and inches (`inches`) to meters (`m`), one can use the relation: `L(m) = L(ft) × 0.3048 + L(inches) × 0.0254`
+
+
+(b) (5 points) Create a variable `height_in_meters` by passing your height in imperial to the `imperial_to_metric` function.
+
+(c) (5 points) Evaluate `round(3.1415)`, `factorial(12)`, `mean(1:17)`.
+
+(d) (5 points) Create an object named `die` that contains the numbers one through six. Simulate a roll of the die with `R`’s `sample()` function. 
+
+
+```{r}
+imperial_to_metric <- function(ft,inches){
+  imperial_to_metric <- ft * .3048 + inches * .0254
+}
+
+
+```
+```{r}
+print(imperial_to_metric(3,5))
+```
+
+```{r}
+round(3.1415)
+factorial(12)
+mean(1:17)
+```
+
+```{r}
+die <- 1:6
+sample(die,1)
+```
+
